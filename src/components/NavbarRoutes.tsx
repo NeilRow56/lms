@@ -22,11 +22,23 @@ export const NavbarRoutes = () => {
           </Button>
         </Link>
       ) : (
-        <Link href="/teacher/courses">
-          <Button size="sm" variant="ghost">
-            Teacher mode
-          </Button>
-        </Link>
+        <div>
+          <Link href="/teacher/courses">
+            <Button size="sm" variant="ghost">
+              Teacher mode
+            </Button>
+          </Link>
+          <Link href="/upload-button">
+            <Button size="sm" variant="ghost">
+              Upload Button
+            </Button>
+          </Link>
+          <Link href="/upload-dnd">
+            <Button size="sm" variant="ghost">
+              Upload DnD
+            </Button>
+          </Link>
+        </div>
       )}
       <UserButton afterSignOutUrl="/" />
     </div>
